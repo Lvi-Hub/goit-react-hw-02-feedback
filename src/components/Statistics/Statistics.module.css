@@ -1,0 +1,9 @@
+.Statistics {
+  display: flex;
+  gap: 10px;
+}
+
+.StatisticsItem {
+  display: flex;
+  gap: 10px;
+}

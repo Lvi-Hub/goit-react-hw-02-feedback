@@ -1,5 +1,5 @@
 import React from 'react';
-import css from 'components/FeedbackOptions/FeedbackOptions.module.css';
+// import css from 'components/FeedbackOptions/FeedbackOptions.module.css';
 
 export const FeedbackOptions = ({
   onButtonGood,

@@ -1,9 +1,10 @@
-.Statistics {
+.StatisticsValues {
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
-.StatisticsItem {
-  display: flex;
-  gap: 10px;
+.item {
+  font-size: 16px;
+  font-weight: normal;
 }

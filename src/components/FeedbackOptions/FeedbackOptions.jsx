@@ -17,7 +17,7 @@ export class FeedbackOptions extends Component {
                 className={css.feedbackBtn}
                 onClick={this.props.onLeaveFeedback}
               >
-                {option}
+                {option.charAt(0).toUpperCase() + option.slice(1)}
               </button>
             </li>
           );

@@ -35,7 +35,7 @@ export class App extends Component {
       <div>
         <Section title={'Please leave feedback'}>
           <FeedbackOptions
-            options={this.state}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.handlFeedbackBtn}
           />
         </Section>
@@ -57,20 +57,3 @@ export class App extends Component {
     );
   }
 }
-
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101',
-//       }}
-//     >
-//       <Statistics />
-//     </div>
-//   );
-// };

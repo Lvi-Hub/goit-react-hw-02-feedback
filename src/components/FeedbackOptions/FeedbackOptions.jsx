@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 
 export class FeedbackOptions extends Component {
   render() {
-    const keys = Object.keys(this.props.options);
+    // const keys = Object.keys(this.props.options);
 
     return (
       <ul className={css.Statistics}>
-        {keys.map(option => {
+        {this.props.options.map(option => {
           return (
             <li className={css.StatisticsItem} key={option}>
               <button
@@ -27,6 +27,6 @@ export class FeedbackOptions extends Component {
   }
 }
 FeedbackOptions.propTypes = {
-  options: PropTypes.objectOf(PropTypes.number).isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
   onLeaveFeedback: PropTypes.func.isRequired,
 };
